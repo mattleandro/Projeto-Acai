@@ -8,14 +8,23 @@
     --cor3: #2F0141;
     --cor4: #FBEE1E;
 }
+html {
+    scroll-behavior: smooth;
+}
 #img-logo {
     position: absolute;
 }
 header {
+    position: fixed;
     background-image: linear-gradient(to right, var(--cor3), var(--cor1));
     height: 100px;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    z-index: 1;
 }
 nav ul {
+    max-width: 100%;
     display: flex;
     list-style-type: none;
 
@@ -32,6 +41,7 @@ li {
 }
 
 ul li a {
+    max-width: 100%;
     color: white;
     text-decoration: none;
     font-family: sans-serif;
@@ -46,5 +56,65 @@ ul li a::after {
 }
 ul li a:hover{
     color: var(--cor4);
-    box-shadow: 5px 5px rgba(0, 0, 0, 0.168);
+    box-shadow: 3px 3px rgba(0, 0, 0, 0.168);
+}
+
+#article-copo {
+    margin-top: 200px;
+    background-image: url(imgs/copo-acaii-300-533.png);
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 300px;
+    position: relative;
+    margin-left: 300px;
+}
+main article span {
+    background-color: var(--cor2);
+    color: white;
+    font-family: sans-serif;
+    padding: 10px;
+    border: solid 3px var(--cor1);
+}
+img {
+    margin: 0 auto;
+    justify-content: center;
+}
+main {
+}
+
+ ol li {
+    padding: 10px;
+}
+ol {
+    max-height: 500px;
+    overflow-y: scroll;
+}
+#section-pq {
+    max-width: 100vh;
+    margin-left: 300px;
+}
+h1 {
+    padding-top: 50px;
+    max-width: 100%;
+    margin-left: 300px;
+    font-size: 60px;
+    font-family: 'Courier New', Courier, monospace;
+}
+h2 {
+    max-width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#historia {
+    max-width: 100vh;
+    margin-left: 300px;
+}
+p {
+    max-width: 300px;
+}
+#teste {
+    background-image: url(imgs/ravis-foto.png);
+    width: 438px;
+    height: 322px;
+    float: right;
+    display: flex;
 }
